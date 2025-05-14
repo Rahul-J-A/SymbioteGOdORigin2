@@ -1,0 +1,16 @@
+{
+  "name": "§aHealing Factor",
+  "description": "With his regenerative healing factor, Knull can recover quickly from injuries.",
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "regeneration",
+      "duration": 21,
+      "amplifier": 3,
+      "show_particles": false,
+      "show_icon": false
+    }
+  }
+}

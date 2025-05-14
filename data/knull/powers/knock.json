@@ -1,0 +1,9 @@
+{
+    "type": "origins:action_on_hit",
+    "name": "Supreme umbrakinesis",
+    "description": "Your a very strong fighter and immune to almost any bad effects..",
+    "bientity_action": {
+        "type": "origins:add_velocity",
+        "z": 4
+    }
+}

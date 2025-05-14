@@ -1,0 +1,58 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team add king"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join king @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join king @e[type=minecraft:husk]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join king @e[type=minecraft:zombie]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join king @e[type=minecraft:evoker]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join king @e[type=minecraft:vex]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join king @e[type=minecraft:warden]"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join king @e[type=minecraft:skeleton]"
+            }
+        ]
+    },
+    "name": "§0Symbiote Domination",
+    "description": "He can remotely influence and control the symbiotes he creates.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "text": "Villagers do not trade with you and all that stays in the dark are loyal to you since they see you as there creater.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ]
+}

@@ -1,0 +1,190 @@
+{
+	"type": "origins:multiple",
+	"launch": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.wither.spawn",
+					"volume": 2.0
+				},
+				{
+					"type": "origins:spawn_entity",
+					"entity": "minecraft:skeleton",
+					"amount": 5,
+					"position": {
+						"x": 3,
+						"y": 1,
+						"z": 3
+					},
+					"tags": [
+						"knull_skeleton"
+					],
+					"properties": {
+						"armor": [
+							{
+								"type": "minecraft:diamond_helmet",
+								"enchants": [
+									{
+										"id": "minecraft:protection",
+										"lvl": 4
+									}
+								]
+							},
+							{
+								"type": "minecraft:diamond_chestplate",
+								"enchants": [
+									{
+										"id": "minecraft:protection",
+										"lvl": 4
+									}
+								]
+							},
+							{
+								"type": "minecraft:diamond_leggings",
+								"enchants": [
+									{
+										"id": "minecraft:protection",
+										"lvl": 4
+									}
+								]
+							},
+							{
+								"type": "minecraft:diamond_boots",
+								"enchants": [
+									{
+										"id": "minecraft:depth_strider",
+										"lvl": 3
+									}
+								]
+							}
+						],
+						"inventory": [
+							{
+								"type": "minecraft:bow",
+								"enchants": [
+									{
+										"id": "minecraft:power",
+										"lvl": 2
+									},
+									{
+										"id": "minecraft:flame",
+										"lvl": 1
+									}
+								]
+							},
+							{
+								"type": "minecraft:tipped_arrow",
+								"effect": "minecraft:poison",
+								"amount": 1
+							}
+						],
+						"persistence_required": true,
+						"ai": {
+							"type": "origins:target_players_except_origin",
+							"origin": "knull",
+							"exclude_origin": true
+						}
+					}
+				},
+				{
+					"type": "origins:spawn_entity",
+					"entity": "minecraft:wither_skeleton",
+					"amount": 5,
+					"position": {
+						"x": -3,
+						"y": 1,
+						"z": -3
+					},
+					"tags": [
+						"knull_witherskeleton"
+					],
+					"properties": {
+						"armor": [
+							{
+								"type": "minecraft:diamond_helmet",
+								"enchants": [
+									{
+										"id": "minecraft:protection",
+										"lvl": 4
+									}
+								]
+							},
+							{
+								"type": "minecraft:diamond_chestplate",
+								"enchants": [
+									{
+										"id": "minecraft:protection",
+										"lvl": 4
+									}
+								]
+							},
+							{
+								"type": "minecraft:diamond_leggings",
+								"enchants": [
+									{
+										"id": "minecraft:protection",
+										"lvl": 4
+									}
+								]
+							},
+							{
+								"type": "minecraft:diamond_boots",
+								"enchants": [
+									{
+										"id": "minecraft:depth_strider",
+										"lvl": 3
+									}
+								]
+							}
+						],
+						"inventory": [
+							{
+								"type": "minecraft:enchanted_sword",
+								"enchants": [
+									{
+										"id": "minecraft:sharpness",
+										"lvl": 3
+									},
+									{
+										"id": "minecraft:fire_aspect",
+										"lvl": 1
+									}
+								]
+							}
+						],
+						"persistence_required": true,
+						"ai": {
+							"type": "origins:target_players_except_origin",
+							"origin": "knull",
+							"exclude_origin": true
+						},
+						"hit_action": {
+							"type": "origins:apply_effect",
+							"effect": {
+								"effect": "minecraft:weakness",
+								"duration": 200,
+								"amplifier": 1,
+								"show_particles": true,
+								"show_icon": true
+							}
+						}
+					}
+				}
+			]
+		},
+		"cooldown": 30,
+		"hud_render": {
+			"should_render": true,
+			"bar_index": 2
+		},
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": true
+		}
+	},
+	"name": "Summon Skeleton Army",
+	"description": "Summons 5 Skeletons and 5 Wither Skeletons armed with enchanted armor, poisoned and flame arrows, and enchanted swords to assist you. When Wither Skeletons attack, the player will receive Weakness for a short time. They will attack all players except those with the Knull origin."
+}

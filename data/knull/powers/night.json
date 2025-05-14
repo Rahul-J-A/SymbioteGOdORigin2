@@ -1,0 +1,54 @@
+{
+  "type": "origins:multiple",
+  "key0": {
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": ">=",
+          "compare_to": 13000
+        },
+        {
+          "type": "origins:time_of_day",
+          "comparison": "<=",
+          "compare_to": 23460
+        }
+      ]
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 2,
+    "max_stacks": 2,
+    "duration_per_stack": 10460,
+    "tick_rate": 20,
+    "effect": {
+      "effect": "minecraft:strength",
+      "duration": 10460,
+      "amplifier": 3,
+      "show_particles": true,
+      "show_icon": true
+    },
+    "effects": [
+      {
+        "effect": "minecraft:speed",
+        "duration": 10460,
+        "amplifier": 3,
+        "show_particles": true,
+        "show_icon": true
+      },
+      {
+        "effect": "minecraft:haste",
+        "duration": 10460,
+        "amplifier": 3,
+        "show_particles": true,
+        "show_icon": true
+      }
+    ]
+  },
+  "name": "Ruler of Darkness",
+  "description": "As one with the dark and its leader, you gain strength when with it.",
+  "name_tag": {
+    "text": "Ruler of Darkness",
+    "color": "black"
+  }
+}

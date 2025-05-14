@@ -1,0 +1,15 @@
+{
+	"type": "origins:effect_immunity",
+	"hidden": true,
+	"effects": [
+		"minecraft:blindness",
+		"minecraft:wither",
+		"minecraft:nausea",
+		"minecraft:darkness",
+		"minecraft:marker",
+		"minecraft:madness",
+		"minecraft:mycelium_ef",
+		"minecraft:starvation"
+	]
+
+}

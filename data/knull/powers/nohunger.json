@@ -1,0 +1,13 @@
+{
+	"type": "origins:modify_exhaustion",
+  "modifier": {
+    "name": "Extra exhaustion from large appetite",
+    "value": -0.95,
+    "operation": "multiply_base"
+		
+
+	},
+	"name": "No Hunger",
+	"description": "You do not get hungry",
+	"hidden":true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "origins:multiple",
+  "give_custom_elytra": {
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+      "type": "origins:execute_command",
+      "command": "give @s icarus:black_feathered_wings",
+      "permission_level": 4
+    },
+    "entity_action_respawned": {
+      "type": "origins:execute_command",
+      "command": "give @s icarus:black_feathered_wings",
+      "permission_level": 4
+    },
+    "entity_action_lost": {
+      "type": "origins:execute_command",
+      "command": "clear @s icarus:black_feathered_wings"
+    },
+    "execute_chosen_when_orb": true
+  },
+  "name": "Flight",
+  "description": "Knull also has the ability to fly using black feathered wings.",
+  "hidden": false
+}

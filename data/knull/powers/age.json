@@ -1,0 +1,18 @@
+{
+    "type": "origins:action_on_wake_up",
+    "name": "Immortality",
+    "description": "He was originally content to drift through the endless void until the Celestials arrived and began creating the 7th iteration of cosmos  the Marvel Universe,He got stronger over time and he still does...",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "/scale multiply pehkui:attack 1.1 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/scale multiply pehkui:defense 1.1 @s"
+            }
+        ]
+    }
+}

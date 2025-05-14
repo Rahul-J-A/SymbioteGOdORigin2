@@ -1,0 +1,43 @@
+{
+	"type": "origins:conditioned_origin",
+	"origin": {
+		"powers": [
+			"knull:strength",
+			"knull:immortality_growth",
+			"knull:durability",
+			"knull:effect",
+			"knull:fear",
+			"knull:backup",
+			"knull:knock",
+			"knull:age",
+			"knull:daychange",
+			"knull:dark",
+			"knull:spawnequip",
+			"knull:regen",
+			"knull:bash",
+			"knull:villager",
+			"knull:no_fall_dmg",
+			"knull:nohunger",
+			"knull:arrowproof",
+			"knull:wing",
+			"knull:restrict_player",
+			"knull:dominance"
+		],
+		"icon": "minecraft:black_glazed_terracotta",
+		"order": 10,
+		"impact": 3,
+		"name": "Knull",
+		"description": "Knull is a fictional supervillain appearing in Marvel Comics. Only LUHARPRO is worthy to wield this power."
+	},
+	"condition": {
+		"type": "origins:entity_name",
+		"name": "LUHARPRO"
+	},
+	"name": "Restricted Origin",
+	"description": "Only LUHARPRO may wield the power of Knull.",
+	"type": "origins:prevent_action",
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "say §cYou cannot select this origin! Only LUHARPRO may wield the power of Knull."
+	}
+}

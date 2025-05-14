@@ -1,0 +1,106 @@
+{
+  "name": "Knull's Counter Curse",
+  "description": "When you hit or are hit by a Kryptonian or Vampire, you unleash a weakening curse.",
+  "type": "origins:multiple",
+  "self_trigger": {
+    "type": "origins:target_action_on_hit",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:player"
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:origin",
+              "origin": "gh:kryptonian"
+            },
+            {
+              "type": "origins:origin",
+              "origin": "gh:vampire"
+            }
+          ]
+        }
+      ]
+    },
+    "action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 100,
+            "amplifier": 4,
+            "show_particles": true,
+            "show_icon": true
+          }
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:poison",
+            "duration": 100,
+            "amplifier": 1
+          }
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:instant_damage",
+            "duration": 1,
+            "amplifier": 2
+          }
+        }
+      ]
+    }
+  },
+  "target_trigger": {
+    "type": "origins:self_action_on_hit",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:origin",
+          "origin": "gh:kryptonian"
+        },
+        {
+          "type": "origins:origin",
+          "origin": "gh:vampire"
+        }
+      ]
+    },
+    "action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 100,
+            "amplifier": 4
+          }
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:poison",
+            "duration": 100,
+            "amplifier": 1
+          }
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:instant_damage",
+            "duration": 1,
+            "amplifier": 2
+          }
+        }
+      ]
+    }
+  }
+}

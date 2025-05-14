@@ -1,0 +1,16 @@
+{
+  "type": "origins:prevent_action",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "tellraw @s {\"text\":\"§cYou cannot select this origin! Only LUHARPRO can choose this origin.\", \"color\":\"red\"}"
+  },
+  "condition": {
+    "type": "origins:inverted",
+    "condition": {
+      "type": "origins:entity_name",
+      "name": "LUHARPRO"
+    }
+  },
+  "name": "Restricted Origin",
+  "description": "Only LUHARPRO may wield the power of Knull."
+}

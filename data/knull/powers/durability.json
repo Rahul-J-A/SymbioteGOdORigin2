@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "name": "superhuman Durability",
+  "description": "your a elder god and your body has endured the worst damage",
+  "modifier": {
+    "attribute": "minecraft:generic.armor",
+    "operation": "addition",
+    "value": 300.0,
+    "name": "Enhanced Durability Bonus"
+  }
+}

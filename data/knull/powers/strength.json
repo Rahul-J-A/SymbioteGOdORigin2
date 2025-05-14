@@ -1,0 +1,12 @@
+{
+  "type": "origins:attribute",
+  "name": "Superhuman strength",
+  "description": "Knull possesses superhuman strength",
+  "modifier": {
+    "attribute": "minecraft:generic.attack_damage",
+    "operation": "addition",
+    "value": 40.0,
+    "name": "god Strength Bonus"
+  }
+}
+

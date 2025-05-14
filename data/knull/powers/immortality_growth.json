@@ -1,0 +1,26 @@
+{
+  "type": "origins:action_on_wake_up",
+  "name": "Cosmic Evolution",
+  "description": "Over 50 days, you grow stronger. Once full power is reached, you remain at your peak.",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scoreboard players add @s evolve_counter 1"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute as @s if score @s evolve_counter matches 50 run scale set @s pehkui:motion 1.5"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute as @s if score @s evolve_counter matches 50 run scale set @s pehkui:jump_height 1.4"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute as @s if score @s evolve_counter matches 50 run scale set @s pehkui:reach 1.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"name":"§0Constituent-Matter generation and manipulation",
+	"description":"take away the sun or give it back",
+	"badges": [{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "Use your Secondary Key %s."
+		}
+	],
+	"type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:if_else",
+    "condition": {
+        "type": "origins:daytime"
+    },
+    "if_action": {
+        "type": "origins:execute_command",
+        "command": "time set night"
+    },
+    "else_action": {
+        "type": "origins:execute_command",
+        "command": "time set day"
+    }
+    },
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": true
+    }
+    }
+	
+	
+}
