@@ -2,7 +2,7 @@
   "type": "origins:prevent_action",
   "entity_action": {
     "type": "origins:execute_command",
-    "command": "tellraw @s {\"text\":\"§cYou cannot select this origin! Only LUHARPRO can choose this origin.\", \"color\":\"red\"}"
+    "command": "tellraw @s {\"text\":\"§cYou cannot select this origin! Only admin  LUHARPRO can choose this origin.OPTIMISATION ORIGIN FOR COMPACTABILITY\", \"color\":\"red\"}"
   },
   "condition": {
     "type": "origins:inverted",
@@ -12,5 +12,5 @@
     }
   },
   "name": "Restricted Origin",
-  "description": "Only LUHARPRO may wield the power of Knull."
+  "description": "OPTIMISATION ORIGIN FOR COMPACTABILITY."
 }

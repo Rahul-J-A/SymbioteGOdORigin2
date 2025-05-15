@@ -12,11 +12,16 @@
       "command": "give @s slu:grand_trailsword{display:{Name:'{\"text\":\"Necro Sword\"}'},Enchantments:[{id:\"minecraft:unbreaking\",lvl:500},{id:\"minecraft:sharpness\",lvl:150},{id:\"minecraft:mending\",lvl:500},{id:\"minecraft:vanishing_curse\",lvl:1}]}",
       "permission_level": 4
     },
-    "execute_chosen_when_orb": true,
+    "entity_action_added": {
+      "type": "origins:execute_command",
+      "command": "give @s slu:grand_trailsword{display:{Name:'{\"text\":\"Necro Sword\"}'},Enchantments:[{id:\"minecraft:unbreaking\",lvl:500},{id:\"minecraft:sharpness\",lvl:150},{id:\"minecraft:mending\",lvl:500},{id:\"minecraft:vanishing_curse\",lvl:1}]}",
+      "permission_level": 4
+    },
     "entity_action_lost": {
       "type": "origins:execute_command",
       "command": "clear @s slu:grand_trailsword"
-    }
+    },
+    "execute_chosen_when_orb": true
   },
   "hidden": true
 }
